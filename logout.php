@@ -1,0 +1,9 @@
+<?
+session_start();
+session_register("sess_fname");
+session_register("sess_name");
+session_register("sess_surname");
+session_register("sess_id");
+session_destroy();
+echo"<script>setTimeout(\"location='index.php'\",100);</script>";
+?>
